@@ -89,6 +89,9 @@
 .navbar-menu {
     margin-left: 1rem;
     position: relative;
+    /* keep the open/close icon above the dropdown (.navbar-menu_container, z-index:2)
+       so the close (X) button is never covered or un-tappable on mobile */
+    z-index: 5;
 }
 
 .navbar-menu svg {
