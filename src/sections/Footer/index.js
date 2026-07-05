@@ -30,10 +30,6 @@ const Footer = () => {
                 </a>
             </div>
 
-            <div className='footer_copyright-container'>
-                <p>Copyright ©2022 All rights reserved</p>
-            </div>
-
             <div className='footer_credit-container'>
                 <p>
                     Design based on the Appson template by{' '}
