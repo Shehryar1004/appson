@@ -2,6 +2,8 @@
 
 A landing page site built with [Next.js](https://nextjs.org/) (Pages Router), statically exported for deployment to any static host.
 
+![Appson landing page preview](.github/preview-image.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:
