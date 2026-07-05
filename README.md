@@ -15,9 +15,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Builds the app for production and, thanks to `output: 'export'` in `next.config.js`, emits a fully static site to the `out/` folder (no separate export step needed).
 
-### `npm start`
+### `npx serve out`
 
-Starts the Next.js production server (only relevant if you are not using static export/hosting).
+Previews the built static site locally. Run `npm run build` first to generate the `out/` folder, then serve it and open the printed URL (typically [http://localhost:3000](http://localhost:3000)).
 
 ## Deployment
 
