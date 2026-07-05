@@ -33,6 +33,15 @@ const Footer = () => {
             <div className='footer_copyright-container'>
                 <p>Copyright ©2022 All rights reserved</p>
             </div>
+
+            <div className='footer_credit-container'>
+                <p>
+                    Design based on the Appson template by{' '}
+                    <a href='https://colorlib.com' target='_blank' rel='noopener noreferrer'>Colorlib</a>,{' '}
+                    licensed under{' '}
+                    <a href='https://creativecommons.org/licenses/by/3.0/' target='_blank' rel='noopener noreferrer'>CC BY 3.0</a>.
+                </p>
+            </div>
         </div>
     )
 }

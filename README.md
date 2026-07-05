@@ -31,3 +31,9 @@ The `out/` folder produced by `npm run build` is a self-contained bundle of stat
 If deploying under a project subpath (e.g. `user.github.io/appson/`) instead of a root domain, add `basePath` and `assetPrefix` to `next.config.js` so asset paths resolve correctly.
 
 Note: the contact form on the page is a static UI demo only — it does not currently send messages. Wiring it up to a real form backend (e.g. Formspree or Netlify Forms) is a separate, out-of-scope task.
+
+## Attribution
+
+The site's design is based on the [Appson](https://colorlib.com/wp/template/appson/) template by [Colorlib](https://colorlib.com), licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+
+Demo images are from [Unsplash](https://unsplash.com).
