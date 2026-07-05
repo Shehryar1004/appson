@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import './style.css'
 import {AiFillHome, AiFillPhone} from 'react-icons/ai'
 import {MdEmail} from 'react-icons/md'
 

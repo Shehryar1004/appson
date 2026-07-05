@@ -1,7 +1,6 @@
 import React from 'react'
 import {FiMonitor, FiHeadphones} from 'react-icons/fi'
 import {AiFillAndroid} from 'react-icons/ai'
-import './style.css'
 
 const Introduction = () => {
     return(

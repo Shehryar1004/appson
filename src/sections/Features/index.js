@@ -2,7 +2,6 @@ import React from 'react'
 import {AiFillCloud, AiFillFileImage, AiFillAndroid} from 'react-icons/ai'
 import {BsBox, BsHeadphones} from 'react-icons/bs'
 import {MdOutlineMonitor} from 'react-icons/md'
-import './style.css'
 
 const Features = () => {
     return(

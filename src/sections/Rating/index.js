@@ -1,7 +1,6 @@
 import React from 'react'
 import {BsFillCloudDownloadFill} from 'react-icons/bs'
 import {AiFillHeart, AiFillTrophy} from 'react-icons/ai'
-import './style.css'
 
 const Rating = () => {
     return(

@@ -1,6 +1,5 @@
 import React from 'react'
 import {AiFillWindows, AiFillAndroid, AiFillApple} from 'react-icons/ai'
-import './style.css'
 
 const Download = () => {
     return(
