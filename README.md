@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Appson
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A landing page site built with [Next.js](https://nextjs.org/) (Pages Router), statically exported for deployment to any static host.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
+Runs the app in development mode with hot reloading.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production and, thanks to `output: 'export'` in `next.config.js`, emits a fully static site to the `out/` folder (no separate export step needed).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Starts the Next.js production server (only relevant if you are not using static export/hosting).
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The `out/` folder produced by `npm run build` is a self-contained bundle of static HTML, CSS, and JS (including `out/index.html`, `out/_next/`, and `out/assets/`). It has no server-side dependencies and can be deployed as-is to any static hosting provider, for example:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Netlify](https://www.netlify.com/) — point the publish directory at `out`
+- GitHub Pages — publish the contents of `out` to the `gh-pages` branch or `/docs` folder
+- AWS S3 (static website hosting) — sync `out/` to a bucket
+- [Cloudflare Pages](https://pages.cloudflare.com/) — set the build output directory to `out`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If deploying under a project subpath (e.g. `user.github.io/appson/`) instead of a root domain, add `basePath` and `assetPrefix` to `next.config.js` so asset paths resolve correctly.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: the contact form on the page is a static UI demo only — it does not currently send messages. Wiring it up to a real form backend (e.g. Formspree or Netlify Forms) is a separate, out-of-scope task.
