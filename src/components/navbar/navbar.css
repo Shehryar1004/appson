@@ -11,6 +11,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* keep the brand logo above the mobile dropdown (.navbar-menu_container,
+       z-index:2) so it isn't hidden when the menu is open */
+    position: relative;
+    z-index: 5;
 }
 
 .navbar-links_logo {
