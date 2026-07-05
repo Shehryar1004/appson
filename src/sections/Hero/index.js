@@ -1,5 +1,4 @@
 import { Navbar } from "../../components";
-import mockup from '../../assets/mockup_1.webp'
 import './style.css'
 
 const Hero = () => {
@@ -17,7 +16,7 @@ const Hero = () => {
                 </div>
 
                 <div className="hero_image">
-                    <img src={mockup} alt='mockup of application'/>
+                    <img src='/assets/mockup_1.webp' alt='mockup of application'/>
                 </div>
 
                 

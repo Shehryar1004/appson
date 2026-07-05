@@ -2,7 +2,6 @@ import React from 'react'
 import {AiFillCloud, AiFillFileImage, AiFillAndroid} from 'react-icons/ai'
 import {BsBox, BsHeadphones} from 'react-icons/bs'
 import {MdOutlineMonitor} from 'react-icons/md'
-import mockup from '../../assets/mockup_3.webp'
 import './style.css'
 
 const Features = () => {
@@ -45,7 +44,7 @@ const Features = () => {
                 </div>
 
                 <div className='features_image-container'>
-                    <img src={mockup} alt='mockup of application'/>
+                    <img src='/assets/mockup_3.webp' alt='mockup of application'/>
                 </div>
 
                 <div className='features_column left'>

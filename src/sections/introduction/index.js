@@ -1,14 +1,13 @@
 import React from 'react'
 import {FiMonitor, FiHeadphones} from 'react-icons/fi'
 import {AiFillAndroid} from 'react-icons/ai'
-import mockup from '../../assets/mockup_2.webp'
 import './style.css'
 
 const Introduction = () => {
     return(
         <div className='intro_container container' id='about'>
             <div className='intro_image'>
-                <img src={mockup} alt='mockup for application'/>
+                <img src='/assets/mockup_2.webp' alt='mockup for application'/>
             </div>
 
             <div className='intro_content'>

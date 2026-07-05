@@ -1,6 +1,4 @@
 import React from 'react'
-import mockup1 from '../../assets/mockup_1.webp'
-import mockup3 from '../../assets/mockup_3.webp'
 import './style.css'
 
 const Screenshots = () => {
@@ -13,16 +11,16 @@ const Screenshots = () => {
 
             <div className='screenshots_carousel'>
                     <div>
-                        <img src={mockup1} alt='mockup'/>
+                        <img src='/assets/mockup_1.webp' alt='mockup'/>
                     </div>
 
                     <div>
-                        <img src={mockup3} alt='mockup'/>
+                        <img src='/assets/mockup_3.webp' alt='mockup'/>
                     </div>
 
                     <div>
-                        <img src={mockup3} alt='mockup'/>
-                    </div>           
+                        <img src='/assets/mockup_3.webp' alt='mockup'/>
+                    </div>
             </div>
         </div>
     )
